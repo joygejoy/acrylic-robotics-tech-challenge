@@ -7,13 +7,13 @@
     "dev": "electron-vite dev",
     "build": "electron-vite build",
     "start": "electron-vite preview",
-    "dist": "npm run build && electron-builder",
-    "dist:mac": "npm run build && electron-builder --mac",
-    "dist:mac-universal": "npm run build && electron-builder --mac --x64 --arm64",
-    "dist:win": "npm run build && electron-builder --win",
-    "dist:win-all": "npm run build && electron-builder --win --x64 --arm64",
-    "dist:linux": "npm run build && electron-builder --linux",
-    "dist:all": "npm run build && electron-builder --win --linux"
+    "dist": "npm run build && electron-builder --publish never",
+    "dist:mac": "npm run build && electron-builder --mac --publish never",
+    "dist:mac-universal": "npm run build && electron-builder --mac --x64 --arm64 --publish never",
+    "dist:win": "npm run build && electron-builder --win --publish never",
+    "dist:win-all": "npm run build && electron-builder --win --x64 --arm64 --publish never",
+    "dist:linux": "npm run build && electron-builder --linux --publish never",
+    "dist:all": "npm run build && electron-builder --win --linux --publish never"
   },
   "author": {
     "name": "joygejoy",
