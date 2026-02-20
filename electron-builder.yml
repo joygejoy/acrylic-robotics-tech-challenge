@@ -20,6 +20,7 @@ linux:
     - deb
     - rpm
   category: Graphics
+  maintainer: joygejoy@users.noreply.github.com
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
